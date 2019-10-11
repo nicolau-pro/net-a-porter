@@ -1,0 +1,47 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 22.5px 0;
+}
+
+header * {
+  display: inline-block;
+}
+
+footer {
+  font-size: 12px;
+  background-color: #000000;
+  padding: 9px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ffffff !important;
+}
+
+main section {
+  margin: 22.5px 0;
+}
+
+main form input {
+  text-transform: uppercase;
+  font-size: 200%;
+}
+/*# sourceMappingURL=App.css.map */
