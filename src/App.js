@@ -8,7 +8,7 @@ class App extends Component {
   state = {
     min: 1,
     max: 3999,
-    roman: require("./Roman.json"),
+    roman: [],
     input: "in",
     output: {
       text: "",
@@ -16,16 +16,8 @@ class App extends Component {
     }
   };
 
-  fetchData = () => {
-    fetch("http://dummy.restapiexample.com/api/v1/employees")
-      .then(response => response.json())
-      .then(data => {
-        console.log(data);
-      });
-  };
-
   componentDidMount() {
-    //this.fetchData();
+    this.setState({ roman: require("./Roman.json") });
     console.log("Loaded");
   }
 
